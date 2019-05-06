@@ -1,0 +1,5 @@
+*.*
+!*.cpp
+!*.php
+!/images
+!.gitignore
