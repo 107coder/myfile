@@ -3,3 +3,4 @@
 !*.php
 !/images
 !.gitignore
+!READMW.md
