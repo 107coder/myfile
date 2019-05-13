@@ -2,4 +2,6 @@
 !*.cpp
 !*.php
 !*.md
+!/images
 !.gitignore
+!README.md
