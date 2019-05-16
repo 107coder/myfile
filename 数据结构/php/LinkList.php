@@ -4,32 +4,17 @@ class LinkList
 {
 	public $data;  //数据域
 	public $next;  //指针域
-	public $length;
+	static $length;
+	
 
 	public function __construct($x){
 		$this->data = $x;
 		$this->next = null;
-		$this->length++;
+		self::$length = self::$length + 1 ;
 	}
 
-	/**
-	* @description: 根据位置在链表中查找一个值
-	* @param {type} 
-	* @return: 
-	*/
-	public function findSite($n){
-		if($n<1 || $n > $this->length){
-			echo "对不起，您的输入有错：请在1到".$this->length.'的范围内！';
-			return;
-		}
-		$head =$this;
-		for($i=1;$i<$n;$i++){
-			$head = $head->next;
-		}
 
-		return $head->data;
-
-	}
+	
 }
 
 $head = new LinkList(1); //创建一个头指针，头结点
@@ -53,8 +38,27 @@ while(true)
 	} 
 }
 
+	/**
+	* @description: 根据位置在链表中查找一个值
+	* @param {type} 
+	* @return: 
+	*/
+function findSite($head,$n){
+	if($n<1 || $n > LinkList::$length){
+		echo "对不起，您的输入有错：请在1到".LinkList::$length.'的范围内！';
+		return;
+	}
+	
+	for($i=1;$i<$n;$i++){
+		var_dump($head->data);
+		$head = $head->next;
+	}
+
+	var_dump($head->data);
+
+}
 echo "<br/>";
-$head->findSite($head,2);
+findSite($head,2);
 
 // var_dump($head);
 

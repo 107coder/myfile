@@ -14,43 +14,43 @@ void info(int sel)
     {
     case 1:
         {
-            cout << "Á´Ê½Õ»²Ù×÷:\n";
-            cout << "½¨Õ»³É¹¦£¡\n";
-            cout << "1--ÔªËØÈëÕ»£¡\n";
-            cout << "2--ÔªËØ³öÕ»£¡\n";
-            cout << "3--È¡Õ»¶¥ÔªËØ£¡\n";
-            cout << "0--Çå¿Õµ±Ç°ÊÓÍ¼£¡\n";
-            cout << "-1-·µ»ØÖ÷Ä¿Â¼£¡\n";
+            cout << "é“¾å¼æ ˆæ“ä½œ:\n";
+            cout << "å»ºæ ˆæˆåŠŸï¼\n";
+            cout << "1--å…ƒç´ å…¥æ ˆï¼\n";
+            cout << "2--å…ƒç´ å‡ºæ ˆï¼\n";
+            cout << "3--å–æ ˆé¡¶å…ƒç´ ï¼\n";
+            cout << "0--æ¸…ç©ºå½“å‰è§†å›¾ï¼\n";
+            cout << "-1-è¿”å›ä¸»ç›®å½•ï¼\n";
         }break;
     case 2:
         {
-            cout << "Ë³ĞòÕ»²Ù×÷:\n";
-            cout << "½¨Õ»³É¹¦£¡\n";
-            cout << "1--ÔªËØÈëÕ»£¡\n";
-            cout << "2--ÔªËØ³öÕ»£¡\n";
-            cout << "3--È¡Õ»¶¥ÔªËØ£¡\n";
-            cout << "0--Çå¿Õµ±Ç°ÊÓÍ¼£¡\n";
-            cout << "-1-·µ»ØÖ÷Ä¿Â¼£¡\n";
+            cout << "é¡ºåºæ ˆæ“ä½œ:\n";
+            cout << "å»ºæ ˆæˆåŠŸï¼\n";
+            cout << "1--å…ƒç´ å…¥æ ˆï¼\n";
+            cout << "2--å…ƒç´ å‡ºæ ˆï¼\n";
+            cout << "3--å–æ ˆé¡¶å…ƒç´ ï¼\n";
+            cout << "0--æ¸…ç©ºå½“å‰è§†å›¾ï¼\n";
+            cout << "-1-è¿”å›ä¸»ç›®å½•ï¼\n";
         }break;
     case 3:
         {
-            cout << "Á´Ê½¶ÓÁĞ²Ù×÷:\n";
-            cout << "½¨¶Ó³É¹¦£¡\n";
-            cout << "1--ÔªËØÈë¶Ó£¡\n";
-            cout << "2--ÔªËØ³ö¶Ó£¡\n";
-            cout << "3--È¡¶ÓÍ·ÔªËØ£¡\n";
-            cout << "0--Çå¿Õµ±Ç°ÊÓÍ¼£¡\n";
-            cout << "-1-·µ»ØÖ÷Ä¿Â¼£¡\n";
+            cout << "é“¾å¼é˜Ÿåˆ—æ“ä½œ:\n";
+            cout << "å»ºé˜ŸæˆåŠŸï¼\n";
+            cout << "1--å…ƒç´ å…¥é˜Ÿï¼\n";
+            cout << "2--å…ƒç´ å‡ºé˜Ÿï¼\n";
+            cout << "3--å–é˜Ÿå¤´å…ƒç´ ï¼\n";
+            cout << "0--æ¸…ç©ºå½“å‰è§†å›¾ï¼\n";
+            cout << "-1-è¿”å›ä¸»ç›®å½•ï¼\n";
         }break;
     case 4:
         {
-            cout << "Ë³Ğò¶ÓÁĞ²Ù×÷:\n";
-            cout << "½¨¶Ó³É¹¦£¡\n";
-            cout << "1--ÔªËØÈë¶Ó£¡\n";
-            cout << "2--ÔªËØ³ö¶Ó£¡\n";
-            cout << "3--È¡¶ÓÍ·ÔªËØ£¡\n";
-            cout << "0--Çå¿Õµ±Ç°ÊÓÍ¼£¡\n";
-            cout << "-1-·µ»ØÖ÷Ä¿Â¼£¡\n";
+            cout << "é¡ºåºé˜Ÿåˆ—æ“ä½œ:\n";
+            cout << "å»ºé˜ŸæˆåŠŸï¼\n";
+            cout << "1--å…ƒç´ å…¥é˜Ÿï¼\n";
+            cout << "2--å…ƒç´ å‡ºé˜Ÿï¼\n";
+            cout << "3--å–é˜Ÿå¤´å…ƒç´ ï¼\n";
+            cout << "0--æ¸…ç©ºå½“å‰è§†å›¾ï¼\n";
+            cout << "-1-è¿”å›ä¸»ç›®å½•ï¼\n";
         }break;
     default: break;
 
@@ -60,16 +60,16 @@ void info(int sel)
 int select()
 {
     int sel;
-    cout << "1--Á´Ê½Õ»²Ù×÷£¡\n";
-    cout << "2--Ë³ĞòÕ»²Ù×÷£¡\n";
-    cout << "3--Ë³Ğò¶Ó²Ù×÷£¡\n";
-    cout << "4--Á´Ê½¶Ó²Ù×÷£¡\n";
-    cout << "0--ÍË³ö³ÌĞò!\n";
-    cout << "ÇëÑ¡ÔñÄúĞèÒªµÄ²Ù×÷£º";
+    cout << "1--é“¾å¼æ ˆæ“ä½œï¼\n";
+    cout << "2--é¡ºåºæ ˆæ“ä½œï¼\n";
+    cout << "3--é¡ºåºé˜Ÿæ“ä½œï¼\n";
+    cout << "4--é“¾å¼é˜Ÿæ“ä½œï¼\n";
+    cout << "0--é€€å‡ºç¨‹åº!\n";
+    cout << "è¯·é€‰æ‹©æ‚¨éœ€è¦çš„æ“ä½œï¼š";
     re: cin >> sel;
     if(sel<0 || sel > 4)
     {
-        cout << "ÄúµÄÑ¡ÔñÓĞÎó£¬ÇëÖØĞÂÑ¡Ôñ£º";
+        cout << "æ‚¨çš„é€‰æ‹©æœ‰è¯¯ï¼Œè¯·é‡æ–°é€‰æ‹©ï¼š";
         goto re;
     }else
     {
@@ -82,21 +82,21 @@ typedef int SElemType;
 typedef int QElemType;
 typedef int Status;
 /*
-* Á´Ê½Õ»²Ù×÷
+* é“¾å¼æ ˆæ“ä½œ
 */
-//¶¨ÒåÁ´Ê½Õ»½á¹¹
+//å®šä¹‰é“¾å¼æ ˆç»“æ„
 typedef struct StackNode
 {
     SElemType data;
     struct StackNode *next;
 }StackNode,*LinkStack;
-//1-1´´½¨Á´Ê½Õ»£¬³õÊ¼»¯
+//1-1åˆ›å»ºé“¾å¼æ ˆï¼Œåˆå§‹åŒ–
 Status InitStack(LinkStack &S)
 {
     S=NULL;
     return OK;
 }
-//1-2ÈëÕ»
+//1-2å…¥æ ˆ
 Status Push(LinkStack &S,SElemType e)
 {
     LinkStack p = new StackNode;
@@ -105,7 +105,7 @@ Status Push(LinkStack &S,SElemType e)
     S=p;
     return OK;
 }
-//1-3³öÕ»
+//1-3å‡ºæ ˆ
 Status Pop(LinkStack &S,SElemType &e)
 {
     if(S==NULL) return ERROR;
@@ -115,7 +115,7 @@ Status Pop(LinkStack &S,SElemType &e)
     delete p;
     return OK;
 }
-//1-4È¡Õ»¶¥ÔªËØ
+//1-4å–æ ˆé¡¶å…ƒç´ 
 SElemType GetTop(LinkStack S)
 {
     if(S!=NULL)
@@ -124,9 +124,9 @@ SElemType GetTop(LinkStack S)
         return ERROR;
 }
 /*
-* Ë³ĞòÕ»²Ù×÷
+* é¡ºåºæ ˆæ“ä½œ
 */
-//¶¨ÒåË³ĞòÕ»½á¹¹
+//å®šä¹‰é¡ºåºæ ˆç»“æ„
 #define MAXSIZE 100;
 typedef struct
 {
@@ -134,7 +134,7 @@ typedef struct
     SElemType *top;
     int stacksize;
 }SqStack;
-//2-1 ´´½¨Ë³ĞòÕ» ³õÊ¼»¯
+//2-1 åˆ›å»ºé¡ºåºæ ˆ åˆå§‹åŒ–
 Status InitStack(SqStack &S)
 {
     S.base = new SElemType;
@@ -143,21 +143,21 @@ Status InitStack(SqStack &S)
     S.stacksize = MAXSIZE;
     return OK;
 }
-//2-2 ÈëÕ»
+//2-2 å…¥æ ˆ
 Status Push(SqStack &S,SElemType e)
 {
     if(S.top - S.base == S.stacksize) return ERROR;
     *S.top++ = e;
     return OK;
 }
-//2-3 ³öÕ»
+//2-3 å‡ºæ ˆ
 Status Pop(SqStack &S,SElemType &e)
 {
     if(S.top == S.base) return ERROR;
     e = *--S.top;
     return OK;
 }
-//2-4 È¡Õ»¶¥ÔªËØ
+//2-4 å–æ ˆé¡¶å…ƒç´ 
 SElemType GetTop(SqStack S)
 {
     if(S.top != S.base)
@@ -167,9 +167,9 @@ SElemType GetTop(SqStack S)
 }
 
 /*
-* Ñ­»·¶ÓÁĞ
+* å¾ªç¯é˜Ÿåˆ—
 */
-//¶¨Òå±í½á¹¹
+//å®šä¹‰è¡¨ç»“æ„
 #define MAXQSIZE 100
 typedef struct
 {
@@ -177,7 +177,7 @@ typedef struct
     int front;
     int rear;
 }SqQueue;
-///3-1¶ÓÁĞµÄ´´½¨ÓÚÓë³õÊ¼»¯
+///3-1é˜Ÿåˆ—çš„åˆ›å»ºäºä¸åˆå§‹åŒ–
 Status InitQueue(SqQueue &Q)
 {
     Q.base = new QElemType[MAXQSIZE];
@@ -185,7 +185,7 @@ Status InitQueue(SqQueue &Q)
     Q.front=Q.rear=0;
     return OK;
 }
-//3-2Èë¶Ó²Ù×÷
+//3-2å…¥é˜Ÿæ“ä½œ
 Status EnQueue(SqQueue &Q,QElemType e)
 {
     if((Q.rear+1)%MAXQSIZE==Q.front)
@@ -194,7 +194,7 @@ Status EnQueue(SqQueue &Q,QElemType e)
     Q.rear=(Q.rear+1)%MAXQSIZE;
     return OK;
 }
-//3-3³ö¶Ó²Ù×÷
+//3-3å‡ºé˜Ÿæ“ä½œ
 Status DeQueue(SqQueue &Q,QElemType &e)
 {
     if(Q.front==Q.rear) return ERROR;
@@ -202,7 +202,7 @@ Status DeQueue(SqQueue &Q,QElemType &e)
     Q.front=(Q.front+1)%MAXQSIZE;
     return OK;
 }
-//3-4È¥¶ÓÍ·ÔªËØ
+//3-4å»é˜Ÿå¤´å…ƒç´ 
 SElemType GetHead(SqQueue Q)
 {
     if(Q.front!=Q.rear)
@@ -226,11 +226,11 @@ indexMenu:
             {
                 clearv1:info(sel);
                 LinkStack S;
-                if(InitStack(S)==OK) cout << "³õÊ¼»¯³É¹¦£¡\n";
-                else cout << "³õÊ¼»¯Ê§°Ü£¡\n";
+                if(InitStack(S)==OK) cout << "åˆå§‹åŒ–æˆåŠŸï¼\n";
+                else cout << "åˆå§‹åŒ–å¤±è´¥ï¼\n";
                 while(true)
                 {
-                    cout << "ÇëÊäÈë²Ù×÷Êı£º";
+                    cout << "è¯·è¾“å…¥æ“ä½œæ•°ï¼š";
                     int item;
                     cin >> item;
                     if(item == -1){ system("cls"); goto indexMenu;}
@@ -241,24 +241,24 @@ indexMenu:
                         case 1:
                             {
                                 SElemType e;
-                                cout << "ÇëÊäÈëÒªÈëÕ»µÄÊı¾İ(Ò»¸öÕûÊı)£º";
+                                cout << "è¯·è¾“å…¥è¦å…¥æ ˆçš„æ•°æ®(ä¸€ä¸ªæ•´æ•°)ï¼š";
                                 cin >> e;
-                                if(Push(S,e) == OK){cout << "²åÈë³É¹¦£¡\n";}
-                                else {cout << "²åÈëÊ§°Ü£¡\n";}
+                                if(Push(S,e) == OK){cout << "æ’å…¥æˆåŠŸï¼\n";}
+                                else {cout << "æ’å…¥å¤±è´¥ï¼\n";}
                             }break;
                              case 2:
                             {
                                 SElemType e;
-                                if(Pop(S,e)==OK){cout << "³öÕ»³É¹¦£¬³öÕ»µÄÔªËØÎª£º"<<e<<endl;}
-                                else {cout << "¸ÃÕ»Îª¿Õ£¬³öÕ»Ê§°Ü£¡\n";}
+                                if(Pop(S,e)==OK){cout << "å‡ºæ ˆæˆåŠŸï¼Œå‡ºæ ˆçš„å…ƒç´ ä¸ºï¼š"<<e<<endl;}
+                                else {cout << "è¯¥æ ˆä¸ºç©ºï¼Œå‡ºæ ˆå¤±è´¥ï¼\n";}
                             }break;
                         case 3:
                             {
-                                if(GetTop(S)==ERROR){cout << "¸ÃÕ»Îª¿Õ£¬ÎŞÕ»¶¥ÔªËØ£¡\n";}
-                                else{cout << "Õ»¶¥µÄÔªËØÎª£º"<<GetTop(S)<<endl;}
+                                if(GetTop(S)==ERROR){cout << "è¯¥æ ˆä¸ºç©ºï¼Œæ— æ ˆé¡¶å…ƒç´ ï¼\n";}
+                                else{cout << "æ ˆé¡¶çš„å…ƒç´ ä¸ºï¼š"<<GetTop(S)<<endl;}
 
                             }break;
-                            default: cout<< "ÊäÈëµÄ²Ù×÷ÂëÓĞÎó!\n";
+                            default: cout<< "è¾“å…¥çš„æ“ä½œç æœ‰è¯¯!\n";
                     }
 
                 }
@@ -268,11 +268,11 @@ indexMenu:
             {
                 SqStack S;
                 clearv2:info(sel);
-                    if(InitStack(S)==OK) cout << "³õÊ¼»¯³É¹¦£¡\n";
-                    else cout << "³õÊ¼»¯Ê§°Ü£¡\n";
+                    if(InitStack(S)==OK) cout << "åˆå§‹åŒ–æˆåŠŸï¼\n";
+                    else cout << "åˆå§‹åŒ–å¤±è´¥ï¼\n";
                 while(true)
                 {
-                    cout << "ÇëÊäÈë²Ù×÷Êı£º";
+                    cout << "è¯·è¾“å…¥æ“ä½œæ•°ï¼š";
                     int item;
                     cin >> item;
                     if(item == -1){ system("cls");  goto indexMenu;}
@@ -283,24 +283,24 @@ indexMenu:
                         case 1:
                             {
                                 SElemType e;
-                                cout << "ÇëÊäÈëÒªÈëÕ»µÄÊı¾İ(Ò»¸öÕûÊı)£º";
+                                cout << "è¯·è¾“å…¥è¦å…¥æ ˆçš„æ•°æ®(ä¸€ä¸ªæ•´æ•°)ï¼š";
                                 cin >> e;
-                                if(Push(S,e) == OK){cout << "²åÈë³É¹¦£¡\n";}
-                                else {cout << "²åÈëÊ§°Ü£¡\n";}
+                                if(Push(S,e) == OK){cout << "æ’å…¥æˆåŠŸï¼\n";}
+                                else {cout << "æ’å…¥å¤±è´¥ï¼\n";}
                             }break;
                         case 2:
                             {
                                 SElemType e;
-                                if(Pop(S,e)==OK){cout << "³öÕ»³É¹¦£¬³öÕ»µÄÔªËØÎª£º"<<e<<endl;}
-                                else {cout << "¸ÃÕ»Îª¿Õ£¬³öÕ»Ê§°Ü£¡\n";}
+                                if(Pop(S,e)==OK){cout << "å‡ºæ ˆæˆåŠŸï¼Œå‡ºæ ˆçš„å…ƒç´ ä¸ºï¼š"<<e<<endl;}
+                                else {cout << "è¯¥æ ˆä¸ºç©ºï¼Œå‡ºæ ˆå¤±è´¥ï¼\n";}
                             }break;
                         case 3:
                             {
-                                if(GetTop(S)==ERROR){cout << "¸ÃÕ»Îª¿Õ£¬ÎŞÕ»¶¥ÔªËØ£¡\n";}
-                                else{cout << "Õ»¶¥µÄÔªËØÎª£º"<<GetTop(S)<<endl;}
+                                if(GetTop(S)==ERROR){cout << "è¯¥æ ˆä¸ºç©ºï¼Œæ— æ ˆé¡¶å…ƒç´ ï¼\n";}
+                                else{cout << "æ ˆé¡¶çš„å…ƒç´ ä¸ºï¼š"<<GetTop(S)<<endl;}
 
                             }break;
-                            default: cout<< "ÊäÈëµÄ²Ù×÷ÂëÓĞÎó!\n";
+                            default: cout<< "è¾“å…¥çš„æ“ä½œç æœ‰è¯¯!\n";
                     }
                 }
 
@@ -309,11 +309,11 @@ indexMenu:
             {
                 clearv3:info(sel);
                 SqQueue Q;
-                if(InitQueue(Q)==OK) cout << "³õÊ¼»¯³É¹¦£¡\n";
-                else cout << "³õÊ¼»¯Ê§°Ü£¡\n";
+                if(InitQueue(Q)==OK) cout << "åˆå§‹åŒ–æˆåŠŸï¼\n";
+                else cout << "åˆå§‹åŒ–å¤±è´¥ï¼\n";
                 while(true)
                 {
-                      cout << "ÇëÊäÈë²Ù×÷Êı£º";
+                      cout << "è¯·è¾“å…¥æ“ä½œæ•°ï¼š";
                 int item;
                 cin >> item;
                 if(item == -1){ system("cls");  goto indexMenu;}
@@ -323,24 +323,24 @@ indexMenu:
                         case 1:
                             {
                                 QElemType e;
-                                cout << "ÇëÊäÈëÒªÈëÕ»µÄÊı¾İ(Ò»¸öÕûÊı)£º";
+                                cout << "è¯·è¾“å…¥è¦å…¥æ ˆçš„æ•°æ®(ä¸€ä¸ªæ•´æ•°)ï¼š";
                                 cin >> e;
-                                if(EnQueue(Q,e) == OK){cout << "²åÈë³É¹¦£¡\n";}
-                                else {cout << "²åÈëÊ§°Ü£¡\n";}
+                                if(EnQueue(Q,e) == OK){cout << "æ’å…¥æˆåŠŸï¼\n";}
+                                else {cout << "æ’å…¥å¤±è´¥ï¼\n";}
                             }break;
                         case 2:
                             {
                                 QElemType e;
-                                if(DeQueue(Q,e)==OK){cout << "³öÕ»³É¹¦£¬³öÕ»µÄÔªËØÎª£º"<<e<<endl;}
-                                else {cout << "¸ÃÕ»Îª¿Õ£¬³öÕ»Ê§°Ü£¡\n";}
+                                if(DeQueue(Q,e)==OK){cout << "å‡ºæ ˆæˆåŠŸï¼Œå‡ºæ ˆçš„å…ƒç´ ä¸ºï¼š"<<e<<endl;}
+                                else {cout << "è¯¥æ ˆä¸ºç©ºï¼Œå‡ºæ ˆå¤±è´¥ï¼\n";}
                             }break;
                         case 3:
                             {
-                                if(GetHead(Q)==ERROR){cout << "¸ÃÕ»Îª¿Õ£¬ÎŞÕ»¶¥ÔªËØ£¡\n";}
-                                else{cout << "Õ»¶¥µÄÔªËØÎª£º"<<GetHead(Q)<<endl;}
+                                if(GetHead(Q)==ERROR){cout << "è¯¥æ ˆä¸ºç©ºï¼Œæ— æ ˆé¡¶å…ƒç´ ï¼\n";}
+                                else{cout << "æ ˆé¡¶çš„å…ƒç´ ä¸ºï¼š"<<GetHead(Q)<<endl;}
 
                             }break;
-                            default: cout<< "ÊäÈëµÄ²Ù×÷ÂëÓĞÎó!\n";
+                            default: cout<< "è¾“å…¥çš„æ“ä½œç æœ‰è¯¯!\n";
                         }
                 }
 
@@ -379,43 +379,43 @@ void info(int sel)
     {
     case 1:
         {
-            cout << "Á´Ê½Õ»²Ù×÷:\n";
-            cout << "½¨Õ»³É¹¦£¡\n";
-            cout << "1--ÔªËØÈëÕ»£¡\n";
-            cout << "2--ÔªËØ³öÕ»£¡\n";
-            cout << "3--È¡Õ»¶¥ÔªËØ£¡\n";
-            cout << "0--Çå¿Õµ±Ç°ÊÓÍ¼£¡\n";
-            cout << "-1-·µ»ØÖ÷Ä¿Â¼£¡\n";
+            cout << "é“¾å¼æ ˆæ“ä½œ:\n";
+            cout << "å»ºæ ˆæˆåŠŸï¼\n";
+            cout << "1--å…ƒç´ å…¥æ ˆï¼\n";
+            cout << "2--å…ƒç´ å‡ºæ ˆï¼\n";
+            cout << "3--å–æ ˆé¡¶å…ƒç´ ï¼\n";
+            cout << "0--æ¸…ç©ºå½“å‰è§†å›¾ï¼\n";
+            cout << "-1-è¿”å›ä¸»ç›®å½•ï¼\n";
         }break;
     case 2:
         {
-            cout << "Ë³ĞòÕ»²Ù×÷:\n";
-            cout << "½¨Õ»³É¹¦£¡\n";
-            cout << "1--ÔªËØÈëÕ»£¡\n";
-            cout << "2--ÔªËØ³öÕ»£¡\n";
-            cout << "3--È¡Õ»¶¥ÔªËØ£¡\n";
-            cout << "0--Çå¿Õµ±Ç°ÊÓÍ¼£¡\n";
-            cout << "-1-·µ»ØÖ÷Ä¿Â¼£¡\n";
+            cout << "é¡ºåºæ ˆæ“ä½œ:\n";
+            cout << "å»ºæ ˆæˆåŠŸï¼\n";
+            cout << "1--å…ƒç´ å…¥æ ˆï¼\n";
+            cout << "2--å…ƒç´ å‡ºæ ˆï¼\n";
+            cout << "3--å–æ ˆé¡¶å…ƒç´ ï¼\n";
+            cout << "0--æ¸…ç©ºå½“å‰è§†å›¾ï¼\n";
+            cout << "-1-è¿”å›ä¸»ç›®å½•ï¼\n";
         }break;
     case 3:
         {
-            cout << "Á´Ê½¶ÓÁĞ²Ù×÷:\n";
-            cout << "½¨¶Ó³É¹¦£¡\n";
-            cout << "1--ÔªËØÈë¶Ó£¡\n";
-            cout << "2--ÔªËØ³ö¶Ó£¡\n";
-            cout << "3--È¡¶ÓÍ·ÔªËØ£¡\n";
-            cout << "0--Çå¿Õµ±Ç°ÊÓÍ¼£¡\n";
-            cout << "-1-·µ»ØÖ÷Ä¿Â¼£¡\n";
+            cout << "é“¾å¼é˜Ÿåˆ—æ“ä½œ:\n";
+            cout << "å»ºé˜ŸæˆåŠŸï¼\n";
+            cout << "1--å…ƒç´ å…¥é˜Ÿï¼\n";
+            cout << "2--å…ƒç´ å‡ºé˜Ÿï¼\n";
+            cout << "3--å–é˜Ÿå¤´å…ƒç´ ï¼\n";
+            cout << "0--æ¸…ç©ºå½“å‰è§†å›¾ï¼\n";
+            cout << "-1-è¿”å›ä¸»ç›®å½•ï¼\n";
         }break;
     case 4:
         {
-            cout << "Ë³Ğò¶ÓÁĞ²Ù×÷:\n";
-            cout << "½¨¶Ó³É¹¦£¡\n";
-            cout << "1--ÔªËØÈë¶Ó£¡\n";
-            cout << "2--ÔªËØ³ö¶Ó£¡\n";
-            cout << "3--È¡¶ÓÍ·ÔªËØ£¡\n";
-            cout << "0--Çå¿Õµ±Ç°ÊÓÍ¼£¡\n";
-            cout << "-1-·µ»ØÖ÷Ä¿Â¼£¡\n";
+            cout << "é¡ºåºé˜Ÿåˆ—æ“ä½œ:\n";
+            cout << "å»ºé˜ŸæˆåŠŸï¼\n";
+            cout << "1--å…ƒç´ å…¥é˜Ÿï¼\n";
+            cout << "2--å…ƒç´ å‡ºé˜Ÿï¼\n";
+            cout << "3--å–é˜Ÿå¤´å…ƒç´ ï¼\n";
+            cout << "0--æ¸…ç©ºå½“å‰è§†å›¾ï¼\n";
+            cout << "-1-è¿”å›ä¸»ç›®å½•ï¼\n";
         }break;
     default: break;
 
@@ -425,16 +425,16 @@ void info(int sel)
 int select()
 {
     int sel;
-    cout << "1--Á´Ê½Õ»²Ù×÷£¡\n";
-    cout << "2--Ë³ĞòÕ»²Ù×÷£¡\n";
-    cout << "3--Ë³Ğò¶Ó²Ù×÷£¡\n";
-    cout << "4--Á´Ê½¶Ó²Ù×÷£¡\n";
-    cout << "0--ÍË³ö³ÌĞò!\n";
-    cout << "ÇëÑ¡ÔñÄúĞèÒªµÄ²Ù×÷£º";
+    cout << "1--é“¾å¼æ ˆæ“ä½œï¼\n";
+    cout << "2--é¡ºåºæ ˆæ“ä½œï¼\n";
+    cout << "3--é¡ºåºé˜Ÿæ“ä½œï¼\n";
+    cout << "4--é“¾å¼é˜Ÿæ“ä½œï¼\n";
+    cout << "0--é€€å‡ºç¨‹åº!\n";
+    cout << "è¯·é€‰æ‹©æ‚¨éœ€è¦çš„æ“ä½œï¼š";
     re: cin >> sel;
     if(sel<0 || sel > 4)
     {
-        cout << "ÄúµÄÑ¡ÔñÓĞÎó£¬ÇëÖØĞÂÑ¡Ôñ£º";
+        cout << "æ‚¨çš„é€‰æ‹©æœ‰è¯¯ï¼Œè¯·é‡æ–°é€‰æ‹©ï¼š";
         goto re;
     }else
     {
@@ -447,21 +447,21 @@ typedef int SElemType;
 typedef int QElemType;
 typedef int Status;
 /*
-* Á´Ê½Õ»²Ù×÷
+* é“¾å¼æ ˆæ“ä½œ
 */
-//¶¨ÒåÁ´Ê½Õ»½á¹¹
+//å®šä¹‰é“¾å¼æ ˆç»“æ„
 typedef struct StackNode
 {
     SElemType data;
     struct StackNode *next;
 }StackNode,*LinkStack;
-//1-1´´½¨Á´Ê½Õ»£¬³õÊ¼»¯
+//1-1åˆ›å»ºé“¾å¼æ ˆï¼Œåˆå§‹åŒ–
 Status InitStack(LinkStack &S)
 {
     S=NULL;
     return OK;
 }
-//1-2ÈëÕ»
+//1-2å…¥æ ˆ
 Status Push(LinkStack &S,SElemType e)
 {
     LinkStack p = new StackNode;
@@ -470,7 +470,7 @@ Status Push(LinkStack &S,SElemType e)
     S=p;
     return OK;
 }
-//1-3³öÕ»
+//1-3å‡ºæ ˆ
 Status Pop(LinkStack &S,SElemType &e)
 {
     if(S==NULL) return ERROR;
@@ -480,7 +480,7 @@ Status Pop(LinkStack &S,SElemType &e)
     delete p;
     return OK;
 }
-//1-4È¡Õ»¶¥ÔªËØ
+//1-4å–æ ˆé¡¶å…ƒç´ 
 SElemType GetTop(LinkStack S)
 {
     if(S!=NULL)
@@ -489,9 +489,9 @@ SElemType GetTop(LinkStack S)
         return ERROR;
 }
 /*
-* Ë³ĞòÕ»²Ù×÷
+* é¡ºåºæ ˆæ“ä½œ
 */
-//¶¨ÒåË³ĞòÕ»½á¹¹
+//å®šä¹‰é¡ºåºæ ˆç»“æ„
 #define MAXSIZE 100;
 typedef struct
 {
@@ -499,7 +499,7 @@ typedef struct
     SElemType *top;
     int stacksize;
 }SqStack;
-//2-1 ´´½¨Ë³ĞòÕ» ³õÊ¼»¯
+//2-1 åˆ›å»ºé¡ºåºæ ˆ åˆå§‹åŒ–
 Status InitStack(SqStack &S)
 {
     S.base = new SElemType;
@@ -508,21 +508,21 @@ Status InitStack(SqStack &S)
     S.stacksize = MAXSIZE;
     return OK;
 }
-//2-2 ÈëÕ»
+//2-2 å…¥æ ˆ
 Status Push(SqStack &S,SElemType e)
 {
     if(S.top - S.base == S.stacksize) return ERROR;
     *S.top++ = e;
     return OK;
 }
-//2-3 ³öÕ»
+//2-3 å‡ºæ ˆ
 Status Pop(SqStack &S,SElemType &e)
 {
     if(S.top == S.base) return ERROR;
     e = *--S.top;
     return OK;
 }
-//2-4 È¡Õ»¶¥ÔªËØ
+//2-4 å–æ ˆé¡¶å…ƒç´ 
 SElemType GetTop(SqStack S)
 {
     if(S.top != S.base)
@@ -532,9 +532,9 @@ SElemType GetTop(SqStack S)
 }
 
 /*
-* Ñ­»·Ë³Ğò¶ÓÁĞ
+* å¾ªç¯é¡ºåºé˜Ÿåˆ—
 */
-//¶¨Òå±í½á¹¹
+//å®šä¹‰è¡¨ç»“æ„
 #define MAXQSIZE 100
 typedef struct
 {
@@ -542,7 +542,7 @@ typedef struct
     int front;
     int rear;
 }SqQueue;
-///3-1¶ÓÁĞµÄ´´½¨ÓÚÓë³õÊ¼»¯
+///3-1é˜Ÿåˆ—çš„åˆ›å»ºäºä¸åˆå§‹åŒ–
 Status InitQueue(SqQueue &Q)
 {
     Q.base = new QElemType[MAXQSIZE];
@@ -550,7 +550,7 @@ Status InitQueue(SqQueue &Q)
     Q.front=Q.rear=0;
     return OK;
 }
-//3-2Èë¶Ó²Ù×÷
+//3-2å…¥é˜Ÿæ“ä½œ
 Status EnQueue(SqQueue &Q,QElemType e)
 {
     if((Q.rear+1)%MAXQSIZE==Q.front)
@@ -559,7 +559,7 @@ Status EnQueue(SqQueue &Q,QElemType e)
     Q.rear=(Q.rear+1)%MAXQSIZE;
     return OK;
 }
-//3-3³ö¶Ó²Ù×÷
+//3-3å‡ºé˜Ÿæ“ä½œ
 Status DeQueue(SqQueue &Q,QElemType &e)
 {
     if(Q.front==Q.rear) return ERROR;
@@ -567,7 +567,7 @@ Status DeQueue(SqQueue &Q,QElemType &e)
     Q.front=(Q.front+1)%MAXQSIZE;
     return OK;
 }
-//3-4È¥¶ÓÍ·ÔªËØ
+//3-4å»é˜Ÿå¤´å…ƒç´ 
 SElemType GetHead(SqQueue Q)
 {
     if(Q.front!=Q.rear)
@@ -576,9 +576,9 @@ SElemType GetHead(SqQueue Q)
         return ERROR;
 }
 /*
-* Á´Ê½¶ÓÁĞ
+* é“¾å¼é˜Ÿåˆ—
 */
-//¶¨ÒåÁ´¶ÓµÄ½á¹¹Ìå
+//å®šä¹‰é“¾é˜Ÿçš„ç»“æ„ä½“
 typedef struct QNode
 {
     QElemType data;
@@ -589,14 +589,14 @@ typedef struct
     QueuePtr front;
     QueuePtr rear;
 }LinkQueue;
-//4-1Á´Ê½¶ÓÁĞµÄ½¨¶ÓÓë³õÊ¼»¯
+//4-1é“¾å¼é˜Ÿåˆ—çš„å»ºé˜Ÿä¸åˆå§‹åŒ–
 Status InitQueue(LinkQueue &Q)
 {
     Q.front = Q.rear = new QNode;
     Q.front->next=NULL;
     return OK;
 }
-//4-2Á´¶ÓµÄÈë¶Ó
+//4-2é“¾é˜Ÿçš„å…¥é˜Ÿ
 Status EnQueue(LinkQueue &Q,QElemType e)
 {
     QueuePtr p=new QNode;
@@ -606,7 +606,7 @@ Status EnQueue(LinkQueue &Q,QElemType e)
     Q.rear = p;
     return OK;
 }
-//4-3Á´¶ÓµÄ³ö¶Ó
+//4-3é“¾é˜Ÿçš„å‡ºé˜Ÿ
 Status DeQueue(LinkQueue &Q,QElemType &e)
 {
     if(Q.front == Q.rear) return ERROR;
@@ -617,7 +617,7 @@ Status DeQueue(LinkQueue &Q,QElemType &e)
     delete p;
     return OK;
 }
-//4-4È¡¶ÓÍ·ÔªËØ
+//4-4å–é˜Ÿå¤´å…ƒç´ 
 SElemType GetHead(LinkQueue Q)
 {
     if(Q.rear!=Q.front)
@@ -641,12 +641,12 @@ indexMenu:
             case 1:
             {
                 LinkStack S;
-                if(InitStack(S)==OK) cout << "³õÊ¼»¯³É¹¦£¡\n";
-                else cout << "³õÊ¼»¯Ê§°Ü£¡\n";
+                if(InitStack(S)==OK) cout << "åˆå§‹åŒ–æˆåŠŸï¼\n";
+                else cout << "åˆå§‹åŒ–å¤±è´¥ï¼\n";
                 clearv1:info(sel);
                 while(true)
                 {
-                    cout << "ÇëÊäÈë²Ù×÷Êı£º";
+                    cout << "è¯·è¾“å…¥æ“ä½œæ•°ï¼š";
                     int item;
                     cin >> item;
                     if(item == -1){ system("cls"); goto indexMenu;}
@@ -657,24 +657,24 @@ indexMenu:
                         case 1:
                             {
                                 SElemType e;
-                                cout << "ÇëÊäÈëÒªÈëÕ»µÄÊı¾İ(Ò»¸öÕûÊı)£º";
+                                cout << "è¯·è¾“å…¥è¦å…¥æ ˆçš„æ•°æ®(ä¸€ä¸ªæ•´æ•°)ï¼š";
                                 cin >> e;
-                                if(Push(S,e) == OK){cout << "²åÈë³É¹¦£¡\n";}
-                                else {cout << "²åÈëÊ§°Ü£¡\n";}
+                                if(Push(S,e) == OK){cout << "æ’å…¥æˆåŠŸï¼\n";}
+                                else {cout << "æ’å…¥å¤±è´¥ï¼\n";}
                             }break;
                              case 2:
                             {
                                 SElemType e;
-                                if(Pop(S,e)==OK){cout << "³öÕ»³É¹¦£¬³öÕ»µÄÔªËØÎª£º"<<e<<endl;}
-                                else {cout << "¸ÃÕ»Îª¿Õ£¬³öÕ»Ê§°Ü£¡\n";}
+                                if(Pop(S,e)==OK){cout << "å‡ºæ ˆæˆåŠŸï¼Œå‡ºæ ˆçš„å…ƒç´ ä¸ºï¼š"<<e<<endl;}
+                                else {cout << "è¯¥æ ˆä¸ºç©ºï¼Œå‡ºæ ˆå¤±è´¥ï¼\n";}
                             }break;
                         case 3:
                             {
-                                if(GetTop(S)==ERROR){cout << "¸ÃÕ»Îª¿Õ£¬ÎŞÕ»¶¥ÔªËØ£¡\n";}
-                                else{cout << "Õ»¶¥µÄÔªËØÎª£º"<<GetTop(S)<<endl;}
+                                if(GetTop(S)==ERROR){cout << "è¯¥æ ˆä¸ºç©ºï¼Œæ— æ ˆé¡¶å…ƒç´ ï¼\n";}
+                                else{cout << "æ ˆé¡¶çš„å…ƒç´ ä¸ºï¼š"<<GetTop(S)<<endl;}
 
                             }break;
-                            default: cout<< "ÊäÈëµÄ²Ù×÷ÂëÓĞÎó!\n";
+                            default: cout<< "è¾“å…¥çš„æ“ä½œç æœ‰è¯¯!\n";
                     }
 
                 }
@@ -683,12 +683,12 @@ indexMenu:
             case 2:
             {
                 SqStack S;
-                    if(InitStack(S)==OK) cout << "³õÊ¼»¯³É¹¦£¡\n";
-                    else cout << "³õÊ¼»¯Ê§°Ü£¡\n";
+                    if(InitStack(S)==OK) cout << "åˆå§‹åŒ–æˆåŠŸï¼\n";
+                    else cout << "åˆå§‹åŒ–å¤±è´¥ï¼\n";
                 clearv2:info(sel);
                 while(true)
                 {
-                    cout << "ÇëÊäÈë²Ù×÷Êı£º";
+                    cout << "è¯·è¾“å…¥æ“ä½œæ•°ï¼š";
                     int item;
                     cin >> item;
                     if(item == -1){ system("cls");  goto indexMenu;}
@@ -699,24 +699,24 @@ indexMenu:
                         case 1:
                             {
                                 SElemType e;
-                                cout << "ÇëÊäÈëÒªÈëÕ»µÄÊı¾İ(Ò»¸öÕûÊı)£º";
+                                cout << "è¯·è¾“å…¥è¦å…¥æ ˆçš„æ•°æ®(ä¸€ä¸ªæ•´æ•°)ï¼š";
                                 cin >> e;
-                                if(Push(S,e) == OK){cout << "²åÈë³É¹¦£¡\n";}
-                                else {cout << "²åÈëÊ§°Ü£¡\n";}
+                                if(Push(S,e) == OK){cout << "æ’å…¥æˆåŠŸï¼\n";}
+                                else {cout << "æ’å…¥å¤±è´¥ï¼\n";}
                             }break;
                         case 2:
                             {
                                 SElemType e;
-                                if(Pop(S,e)==OK){cout << "³öÕ»³É¹¦£¬³öÕ»µÄÔªËØÎª£º"<<e<<endl;}
-                                else {cout << "¸ÃÕ»Îª¿Õ£¬³öÕ»Ê§°Ü£¡\n";}
+                                if(Pop(S,e)==OK){cout << "å‡ºæ ˆæˆåŠŸï¼Œå‡ºæ ˆçš„å…ƒç´ ä¸ºï¼š"<<e<<endl;}
+                                else {cout << "è¯¥æ ˆä¸ºç©ºï¼Œå‡ºæ ˆå¤±è´¥ï¼\n";}
                             }break;
                         case 3:
                             {
-                                if(GetTop(S)==ERROR){cout << "¸ÃÕ»Îª¿Õ£¬ÎŞÕ»¶¥ÔªËØ£¡\n";}
-                                else{cout << "Õ»¶¥µÄÔªËØÎª£º"<<GetTop(S)<<endl;}
+                                if(GetTop(S)==ERROR){cout << "è¯¥æ ˆä¸ºç©ºï¼Œæ— æ ˆé¡¶å…ƒç´ ï¼\n";}
+                                else{cout << "æ ˆé¡¶çš„å…ƒç´ ä¸ºï¼š"<<GetTop(S)<<endl;}
 
                             }break;
-                            default: cout<< "ÊäÈëµÄ²Ù×÷ÂëÓĞÎó!\n";
+                            default: cout<< "è¾“å…¥çš„æ“ä½œç æœ‰è¯¯!\n";
                     }
                 }
 
@@ -724,12 +724,12 @@ indexMenu:
             case 3:
             {
                 SqQueue Q;
-                if(InitQueue(Q)==OK) cout << "³õÊ¼»¯³É¹¦£¡\n";
-                else cout << "³õÊ¼»¯Ê§°Ü£¡\n";
+                if(InitQueue(Q)==OK) cout << "åˆå§‹åŒ–æˆåŠŸï¼\n";
+                else cout << "åˆå§‹åŒ–å¤±è´¥ï¼\n";
                 clearv3:info(sel);
                 while(true)
                 {
-                      cout << "ÇëÊäÈë²Ù×÷Êı£º";
+                      cout << "è¯·è¾“å…¥æ“ä½œæ•°ï¼š";
                 int item;
                 cin >> item;
                 if(item == -1){ system("cls");  goto indexMenu;}
@@ -739,24 +739,24 @@ indexMenu:
                         case 1:
                             {
                                 QElemType e;
-                                cout << "ÇëÊäÈëÒªÈëÕ»µÄÊı¾İ(Ò»¸öÕûÊı)£º";
+                                cout << "è¯·è¾“å…¥è¦å…¥æ ˆçš„æ•°æ®(ä¸€ä¸ªæ•´æ•°)ï¼š";
                                 cin >> e;
-                                if(EnQueue(Q,e) == OK){cout << "²åÈë³É¹¦£¡\n";}
-                                else {cout << "²åÈëÊ§°Ü£¡\n";}
+                                if(EnQueue(Q,e) == OK){cout << "æ’å…¥æˆåŠŸï¼\n";}
+                                else {cout << "æ’å…¥å¤±è´¥ï¼\n";}
                             }break;
                         case 2:
                             {
                                 QElemType e;
-                                if(DeQueue(Q,e)==OK){cout << "³öÕ»³É¹¦£¬³ö¶ÓµÄÔªËØÎª£º"<<e<<endl;}
-                                else {cout << "¸ÃÕ»Îª¿Õ£¬³ö¶ÓÊ§°Ü£¡\n";}
+                                if(DeQueue(Q,e)==OK){cout << "å‡ºæ ˆæˆåŠŸï¼Œå‡ºé˜Ÿçš„å…ƒç´ ä¸ºï¼š"<<e<<endl;}
+                                else {cout << "è¯¥æ ˆä¸ºç©ºï¼Œå‡ºé˜Ÿå¤±è´¥ï¼\n";}
                             }break;
                         case 3:
                             {
-                                if(GetHead(Q)==ERROR){cout << "¸Ã¶ÓÁĞÎª¿Õ£¬ÎŞ¶ÓÍ·ÔªËØ£¡\n";}
-                                else{cout << "¶ÓÍ·ÔªËØÎª£º"<<GetHead(Q)<<endl;}
+                                if(GetHead(Q)==ERROR){cout << "è¯¥é˜Ÿåˆ—ä¸ºç©ºï¼Œæ— é˜Ÿå¤´å…ƒç´ ï¼\n";}
+                                else{cout << "é˜Ÿå¤´å…ƒç´ ä¸ºï¼š"<<GetHead(Q)<<endl;}
 
                             }break;
-                            default: cout<< "ÊäÈëµÄ²Ù×÷ÂëÓĞÎó!\n";
+                            default: cout<< "è¾“å…¥çš„æ“ä½œç æœ‰è¯¯!\n";
                         }
                 }
 
@@ -764,12 +764,12 @@ indexMenu:
             case 4:
             {
                 LinkQueue Q;
-                if(InitQueue(Q)==OK) cout << "³õÊ¼»¯³É¹¦£¡\n";
-                else cout << "³õÊ¼»¯Ê§°Ü£¡\n";
+                if(InitQueue(Q)==OK) cout << "åˆå§‹åŒ–æˆåŠŸï¼\n";
+                else cout << "åˆå§‹åŒ–å¤±è´¥ï¼\n";
                 clearv4:info(sel);
                 while(true)
                 {
-                      cout << "ÇëÊäÈë²Ù×÷Êı£º";
+                      cout << "è¯·è¾“å…¥æ“ä½œæ•°ï¼š";
                 int item;
                 cin >> item;
                 if(item == -1){ system("cls");  goto indexMenu;}
@@ -779,24 +779,24 @@ indexMenu:
                         case 1:
                             {
                                 QElemType e;
-                                cout << "ÇëÊäÈëÒªÈëÕ»µÄÊı¾İ(Ò»¸öÕûÊı)£º";
+                                cout << "è¯·è¾“å…¥è¦å…¥æ ˆçš„æ•°æ®(ä¸€ä¸ªæ•´æ•°)ï¼š";
                                 cin >> e;
-                                if(EnQueue(Q,e) == OK){cout << "²åÈë³É¹¦£¡\n";}
-                                else {cout << "²åÈëÊ§°Ü£¡\n";}
+                                if(EnQueue(Q,e) == OK){cout << "æ’å…¥æˆåŠŸï¼\n";}
+                                else {cout << "æ’å…¥å¤±è´¥ï¼\n";}
                             }break;
                         case 2:
                             {
                                 QElemType e;
-                                if(DeQueue(Q,e)==OK){cout << "³öÕ»³É¹¦£¬³ö¶ÓµÄÔªËØÎª£º"<<e<<endl;}
-                                else {cout << "¸ÃÕ»Îª¿Õ£¬³ö¶ÓÊ§°Ü£¡\n";}
+                                if(DeQueue(Q,e)==OK){cout << "å‡ºæ ˆæˆåŠŸï¼Œå‡ºé˜Ÿçš„å…ƒç´ ä¸ºï¼š"<<e<<endl;}
+                                else {cout << "è¯¥æ ˆä¸ºç©ºï¼Œå‡ºé˜Ÿå¤±è´¥ï¼\n";}
                             }break;
                         case 3:
                             {
-                                if(GetHead(Q)==ERROR){cout << "¸Ã¶ÓÁĞÎª¿Õ£¬ÎŞ¶ÔÍ·ÔªËØ£¡\n";}
-                                else{cout << "¶ÓÍ·ÔªËØÎª£º"<<GetHead(Q)<<endl;}
+                                if(GetHead(Q)==ERROR){cout << "è¯¥é˜Ÿåˆ—ä¸ºç©ºï¼Œæ— å¯¹å¤´å…ƒç´ ï¼\n";}
+                                else{cout << "é˜Ÿå¤´å…ƒç´ ä¸ºï¼š"<<GetHead(Q)<<endl;}
 
                             }break;
-                            default: cout<< "ÊäÈëµÄ²Ù×÷ÂëÓĞÎó!\n";
+                            default: cout<< "è¾“å…¥çš„æ“ä½œç æœ‰è¯¯!\n";
                         }
                 }
             }break;

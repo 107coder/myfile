@@ -8,14 +8,14 @@ using namespace std;
 
 typedef int ElemType;
 typedef int Status;
-//定义表的结构
+//瀹氫箟琛ㄧ殑缁撴瀯
 typedef struct LNode
 {
     ElemType data;
     struct LNode *next;
 }LNode,*LinkList;
 
-//初始化该链表
+//鍒濆鍖栬閾捐〃
 Status InitList(LinkList &L)
 {
     L = new LNode;

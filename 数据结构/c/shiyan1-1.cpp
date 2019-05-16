@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #include <iostream>
 #include <stdlib.h>
 #include <stdio.h>
@@ -10,14 +9,14 @@ using namespace std;
 typedef int ElemType ;
 typedef int Status;
 
-//½¨Á¢Ë³Ğò±í
+//å»ºç«‹é¡ºåºè¡¨
 typedef struct {
     ElemType *elem;
     int length;
 } SqList;
 #define MAXSIZE 100
 
-//³õÊ¼»¯Ë³Ğò±í
+//åˆå§‹åŒ–é¡ºåºè¡¨
 Status InitList(SqList &L) {
     L.elem = new ElemType(MAXSIZE);
     if(!L.elem) exit(OVERFLOW);
@@ -26,7 +25,7 @@ Status InitList(SqList &L) {
 
 }
 
-//Ïò±íÖĞ²åÈëÊı¾İ
+//å‘è¡¨ä¸­æ’å…¥æ•°æ®
 Status ListInsert(SqList &L,int i,ElemType e) {
     if((i<1) || (i>L.length+1)) return ERROR;
     if(L.length==MAXSIZE) return ERROR;
@@ -37,12 +36,12 @@ Status ListInsert(SqList &L,int i,ElemType e) {
     return OK;
 }
 
-//ÏÔÊ¾Êı¾İ
+//æ˜¾ç¤ºæ•°æ®
 Status TraverseList(SqList L) {
         if(L.length == 0)
-            cout << "¸ÃË³Ğò±íÎª¿Õ£¡";
+            cout << "è¯¥é¡ºåºè¡¨ä¸ºç©ºï¼";
         else
-            cout << "¸ÃË³Ğò±íÀïµÄÔªËØÎª£º";
+            cout << "è¯¥é¡ºåºè¡¨é‡Œçš„å…ƒç´ ä¸ºï¼š";
 
         for(int i=0; i<L.length; i++){
             cout << L.elem[i];
@@ -51,32 +50,32 @@ Status TraverseList(SqList L) {
 
         cout << endl;
 }
-//Çå¿ÕÊı¾İ±í
+//æ¸…ç©ºæ•°æ®è¡¨
 Status ClearList(SqList &L) {
     L.length=0;
     return OK;
 }
-//ÅĞ¶ÏÏßĞÔ±íÊÇ·ñÎª¿Õ
+//åˆ¤æ–­çº¿æ€§è¡¨æ˜¯å¦ä¸ºç©º
 Status ListEmpty(SqList L) {
     if(L.length == 0)
-        cout << "¸ÃÏßĞÔ±íÎª¿Õ£¡"<<endl;
+        cout << "è¯¥çº¿æ€§è¡¨ä¸ºç©ºï¼"<<endl;
     else
-        cout << "¸ÃÏßĞÔ±í²»Îª¿Õ£¡"<<endl;
+        cout << "è¯¥çº¿æ€§è¡¨ä¸ä¸ºç©ºï¼"<<endl;
     return OK;
 }
-//ÇóÏßĞÔ±íµÃ³¤¶È
+//æ±‚çº¿æ€§è¡¨å¾—é•¿åº¦
 Status ListLength(SqList L) {
-    cout << "¸ÃÏßĞÔ±íµÃ³¤¶ÈÎª£º" << L.length <<endl;
+    cout << "è¯¥çº¿æ€§è¡¨å¾—é•¿åº¦ä¸ºï¼š" << L.length <<endl;
     return OK;
 }
 
-//»ñÈ¡Ö¸¶¨Î»ÖÃµÄÔªËØ
+//è·å–æŒ‡å®šä½ç½®çš„å…ƒç´ 
 Status GetElem(SqList L,int i,ElemType &e) {
     if(i<1 || i>L.length) return ERROR;
     e = L.elem[i-1];
     return OK;
 }
-//ÇóÇ°Çı
+//æ±‚å‰é©±
 Status PriorElem(SqList &L,ElemType cur_e,ElemType &pre_e)
 {
     int i = 0;
@@ -84,16 +83,16 @@ Status PriorElem(SqList &L,ElemType cur_e,ElemType &pre_e)
         if(L.elem[i] == cur_e) break;
 
     if(i==0){
-        cout << "¸ÃÔªËØÎªµÚÒ»¸öÔªËØ£¬ÎŞÇ°Çı£¡\n";  return ERROR;
+        cout << "è¯¥å…ƒç´ ä¸ºç¬¬ä¸€ä¸ªå…ƒç´ ï¼Œæ— å‰é©±ï¼\n";  return ERROR;
     }else if(i>=L.length){
-        cout << "±íÖĞÎŞ´ËÔªËØ£¡\n";  return ERROR;
+        cout << "è¡¨ä¸­æ— æ­¤å…ƒç´ ï¼\n";  return ERROR;
     }else{
         pre_e = L.elem[i-1];
-        cout << "¸ÃÔªËØµÄÇ°ÇıÎª"<<pre_e<<"\n";
+        cout << "è¯¥å…ƒç´ çš„å‰é©±ä¸º"<<pre_e<<"\n";
     }
     return OK;
 }
-//Çóºó¼Ì
+//æ±‚åç»§
 
 Status NextElem(SqList &L,ElemType cur_e,ElemType &next_e)
 {
@@ -102,16 +101,16 @@ Status NextElem(SqList &L,ElemType cur_e,ElemType &next_e)
         if(L.elem[i] == cur_e) break;
 
     if(i==L.length-1){
-        cout << "¸ÃÔªËØÎª×îºóÒ»¸öÔªËØ£¬ÎŞºó¼Ì£¡\n";  return ERROR;
+        cout << "è¯¥å…ƒç´ ä¸ºæœ€åä¸€ä¸ªå…ƒç´ ï¼Œæ— åç»§ï¼\n";  return ERROR;
     }else if(i>=L.length){
-        cout << "±íÖĞÎŞ´ËÔªËØ£¡\n"; return ERROR;
+        cout << "è¡¨ä¸­æ— æ­¤å…ƒç´ ï¼\n"; return ERROR;
     }else{
         next_e = L.elem[i+1];
-        cout << "¸ÃÔªËØµÄºó¼ÌÎª£º"<<next_e<<"\n";
+        cout << "è¯¥å…ƒç´ çš„åç»§ä¸ºï¼š"<<next_e<<"\n";
     }
     return OK;
 }
-//É¾³ıÖ¸¶¨Î»ÖÃµÄÔªËØ
+//åˆ é™¤æŒ‡å®šä½ç½®çš„å…ƒç´ 
 Status ListDelete(SqList &L,ElemType i)
 {
     if( i<1 || i>(L.length-1)) return ERROR;
@@ -121,22 +120,22 @@ Status ListDelete(SqList &L,ElemType i)
     return OK;
 }
 
-//´òÓ¡ÌáÊ¾ĞÅÏ¢
+//æ‰“å°æç¤ºä¿¡æ¯
 void ShowInfo()
 {
-    cout << "1710121183-------´ŞÉÙ·å\n";
-    cout << "1----Çå¿ÕÏßĞÔ±í\n";
-    cout << "2----ÅĞ¶ÏÏßĞÔ±íÊÇ·ñÎª¿Õ\n";
-    cout << "3----ÇóÏßĞÔ±í³¤¶È\n";
-    cout << "4----»ñÈ¡ÏßĞÔ±íÖ¸¶¨Î»ÖÃÔªËØ\n";
-    cout << "5----ÇóÇ°Çı\n";
-    cout << "6----Çóºó¼Ì\n";
-    cout << "7----ÔÚÏßĞÔ±íÖ¸¶¨Î»ÖÃÖĞ²åÈëÔªËØ\n";
-    cout << "8----É¾³ıÏßĞÔ±íÖ¸¶¨Î»ÖÃÔªËØ\n";
-    cout << "9----ÏÔÊ¾ÏßĞÔ±í\n";
-    cout << "0-----Çå³ıÆÁÄ»\n";
+    cout << "1710121183-------å´”å°‘å³°\n";
+    cout << "1----æ¸…ç©ºçº¿æ€§è¡¨\n";
+    cout << "2----åˆ¤æ–­çº¿æ€§è¡¨æ˜¯å¦ä¸ºç©º\n";
+    cout << "3----æ±‚çº¿æ€§è¡¨é•¿åº¦\n";
+    cout << "4----è·å–çº¿æ€§è¡¨æŒ‡å®šä½ç½®å…ƒç´ \n";
+    cout << "5----æ±‚å‰é©±\n";
+    cout << "6----æ±‚åç»§\n";
+    cout << "7----åœ¨çº¿æ€§è¡¨æŒ‡å®šä½ç½®ä¸­æ’å…¥å…ƒç´ \n";
+    cout << "8----åˆ é™¤çº¿æ€§è¡¨æŒ‡å®šä½ç½®å…ƒç´ \n";
+    cout << "9----æ˜¾ç¤ºçº¿æ€§è¡¨\n";
+    cout << "0-----æ¸…é™¤å±å¹•\n";
 
-    cout << "\tÍË³ö£¬ÊäÈëÒ»¸ö¸ºÊı£¡\n";
+    cout << "\té€€å‡ºï¼Œè¾“å…¥ä¸€ä¸ªè´Ÿæ•°ï¼\n";
 
 }
 
@@ -148,7 +147,7 @@ int main(void) {
 
     int in;
     while(true) {
-        cout << "ÇëÊäÈëÒ»¸ö²Ù×÷Âë£º";
+        cout << "è¯·è¾“å…¥ä¸€ä¸ªæ“ä½œç ï¼š";
         cin >> in;
         if(in < 0) in = -1;
         switch(in) {
@@ -164,21 +163,21 @@ int main(void) {
             break;
         case 4: {
             int n = 0;
-            cout << "ÇëÊäÈë²éÑ¯ÔªËØµÄÎ»ÖÃ£º";
+            cout << "è¯·è¾“å…¥æŸ¥è¯¢å…ƒç´ çš„ä½ç½®ï¼š";
             cin >> n;
             ElemType e;
             int $status = GetElem(L,n,e);
             if($status == 0){
-                cout << "²éÑ¯µÄÎ»ÖÃ²»´æÔÚ£¡\n";
+                cout << "æŸ¥è¯¢çš„ä½ç½®ä¸å­˜åœ¨ï¼\n";
             } else{
-                cout << "Ë³Ğò±íÖĞµÚ"<< n <<"¸öÔªËØÎª£º" << e <<endl;
+                cout << "é¡ºåºè¡¨ä¸­ç¬¬"<< n <<"ä¸ªå…ƒç´ ä¸ºï¼š" << e <<endl;
             }
             break;
         }
         case 5:{
             int in = 0;
             ElemType out;
-            cout <<"ÇëÊäÈëÔªËØ£º";
+            cout <<"è¯·è¾“å…¥å…ƒç´ ï¼š";
             cin >> in;
             PriorElem(L,in,out);
 
@@ -187,7 +186,7 @@ int main(void) {
         case 6:{
             int in = 0;
             ElemType out;
-            cout <<"ÇëÊäÈëÔªËØ£º";
+            cout <<"è¯·è¾“å…¥å…ƒç´ ï¼š";
             cin >> in;
             NextElem(L,in,out);
             break;
@@ -196,22 +195,22 @@ int main(void) {
         case 7: {
             int i;
             ElemType e;
-            cout << "ÇëÊäÈëÒª²åÈëµÄÎ»ÖÃ£º";
+            cout << "è¯·è¾“å…¥è¦æ’å…¥çš„ä½ç½®ï¼š";
             cin >> i;
-            cout << "ÇëÊäÈëÒª²åÈëµÄÖµ£º";
+            cout << "è¯·è¾“å…¥è¦æ’å…¥çš„å€¼ï¼š";
             cin >> e;
             int $status = ListInsert(L,i,e);
-            if($status == 0) cout << "ÊäÈëµÄÎ»ÖÃ²»´æÔÚ£¬²åÈëÊ§°Ü£¡\n";
-            else cout << "²åÈë³É¹¦£¡\n";
+            if($status == 0) cout << "è¾“å…¥çš„ä½ç½®ä¸å­˜åœ¨ï¼Œæ’å…¥å¤±è´¥ï¼\n";
+            else cout << "æ’å…¥æˆåŠŸï¼\n";
             break;
         }
         case 8:{
             int in = 0;
-            cout << "ÇëÊäÈëÉ¾³ıÔªËØµÄÎ»ÖÃ£º";
+            cout << "è¯·è¾“å…¥åˆ é™¤å…ƒç´ çš„ä½ç½®ï¼š";
             cin >>in;
             int $status = ListDelete(L,in);
-            if($status == 1) cout << "É¾³ı³É¹¦£¡\n";
-            else cout << "Î»ÖÃ²»´æÔÚ£¬É¾³ıÊ§°Ü£¡\n";
+            if($status == 1) cout << "åˆ é™¤æˆåŠŸï¼\n";
+            else cout << "ä½ç½®ä¸å­˜åœ¨ï¼Œåˆ é™¤å¤±è´¥ï¼\n";
             break;
         }
         case 9:
@@ -222,242 +221,10 @@ int main(void) {
             ShowInfo();
             break;
         case -1: return 0;
-        default: cout << "ÄúÊäÈëÁË´íÎóµÄ²Ù×÷Âë£¬"; break;
+        default: cout << "æ‚¨è¾“å…¥äº†é”™è¯¯çš„æ“ä½œç ï¼Œ"; break;
         }
     }
 
 
     return 0;
 }
-=======
-#include <iostream>
-#include <stdlib.h>
-#include <stdio.h>
-#include <windows.h>
-using namespace std;
-#define OK 1
-#define ERROR 0
-#define OVERFLOW -2
-typedef int ElemType ;
-typedef int Status;
-
-//½¨Á¢Ë³Ğò±í
-typedef struct {
-    ElemType *elem;
-    int length;
-} SqList;
-#define MAXSIZE 100
-
-//³õÊ¼»¯Ë³Ğò±í
-Status InitList(SqList &L) {
-    L.elem = new ElemType(MAXSIZE);
-    if(!L.elem) exit(OVERFLOW);
-    L.length = 0;
-    return OK;
-
-}
-
-//Ïò±íÖĞ²åÈëÊı¾İ
-Status ListInsert(SqList &L,int i,ElemType e) {
-    if((i<1) || (i>L.length+1)) return ERROR;
-    if(L.length==MAXSIZE) return ERROR;
-    for(int j=L.length-1; j>=i-1; j--)
-        L.elem[j+1] = L.elem[j];
-        L.elem[i-1] = e;
-    ++L.length;
-    return OK;
-}
-
-//ÏÔÊ¾Êı¾İ
-Status TraverseList(SqList L) {
-        if(L.length == 0)
-            cout << "¸ÃË³Ğò±íÎª¿Õ£¡";
-        else
-            cout << "¸ÃË³Ğò±íÀïµÄÔªËØÎª£º";
-
-        for(int i=0; i<L.length; i++){
-            cout << L.elem[i];
-            if(i != L.length-1) cout << ",";
-        }
-
-        cout << endl;
-}
-//Çå¿ÕÊı¾İ±í
-Status ClearList(SqList &L) {
-    L.length=0;
-    return OK;
-}
-//ÅĞ¶ÏÏßĞÔ±íÊÇ·ñÎª¿Õ
-Status ListEmpty(SqList L) {
-    if(L.length == 0)
-        cout << "¸ÃÏßĞÔ±íÎª¿Õ£¡"<<endl;
-    else
-        cout << "¸ÃÏßĞÔ±í²»Îª¿Õ£¡"<<endl;
-    return OK;
-}
-//ÇóÏßĞÔ±íµÃ³¤¶È
-Status ListLength(SqList L) {
-    cout << "¸ÃÏßĞÔ±íµÃ³¤¶ÈÎª£º" << L.length <<endl;
-    return OK;
-}
-
-//»ñÈ¡Ö¸¶¨Î»ÖÃµÄÔªËØ
-Status GetElem(SqList L,int i,ElemType &e) {
-    if(i<1 || i>L.length) return ERROR;
-    e = L.elem[i-1];
-    return OK;
-}
-//ÇóÇ°Çı
-Status PriorElem(SqList &L,ElemType cur_e,ElemType &pre_e)
-{
-    int i = 0;
-    for( i=0; i<L.length;i++)
-        if(L.elem[i] == cur_e) break;
-
-    if(i==0){
-        cout << "¸ÃÔªËØÎªµÚÒ»¸öÔªËØ£¬ÎŞÇ°Çı£¡\n";  return ERROR;
-    }else if(i>=L.length){
-        cout << "±íÖĞÎŞ´ËÔªËØ£¡\n";  return ERROR;
-    }else{
-        pre_e = L.elem[i-1];
-        cout << "¸ÃÔªËØµÄÇ°ÇıÎª"<<pre_e<<"\n";
-    }
-    return OK;
-}
-//Çóºó¼Ì
-
-Status NextElem(SqList &L,ElemType cur_e,ElemType &next_e)
-{
-    int i = 0;
-    for( i=0; i<L.length;i++)
-        if(L.elem[i] == cur_e) break;
-
-    if(i==L.length-1){
-        cout << "¸ÃÔªËØÎª×îºóÒ»¸öÔªËØ£¬ÎŞºó¼Ì£¡\n";  return ERROR;
-    }else if(i>=L.length){
-        cout << "±íÖĞÎŞ´ËÔªËØ£¡\n"; return ERROR;
-    }else{
-        next_e = L.elem[i+1];
-        cout << "¸ÃÔªËØµÄºó¼ÌÎª£º"<<next_e<<"\n";
-    }
-    return OK;
-}
-//É¾³ıÖ¸¶¨Î»ÖÃµÄÔªËØ
-Status ListDelete(SqList &L,ElemType i)
-{
-    if( i<1 || i>(L.length-1)) return ERROR;
-    for(int j=i-1; j<L.length-1;j++)
-        L.elem[j] = L.elem[j+1];
-    --L.length;
-    return OK;
-}
-
-//´òÓ¡ÌáÊ¾ĞÅÏ¢
-void ShowInfo()
-{
-    cout << "1710121183-------´ŞÉÙ·å\n";
-    cout << "1----Çå¿ÕÏßĞÔ±í\n";
-    cout << "2----ÅĞ¶ÏÏßĞÔ±íÊÇ·ñÎª¿Õ\n";
-    cout << "3----ÇóÏßĞÔ±í³¤¶È\n";
-    cout << "4----»ñÈ¡ÏßĞÔ±íÖ¸¶¨Î»ÖÃÔªËØ\n";
-    cout << "5----ÇóÇ°Çı\n";
-    cout << "6----Çóºó¼Ì\n";
-    cout << "7----ÔÚÏßĞÔ±íÖ¸¶¨Î»ÖÃÖĞ²åÈëÔªËØ\n";
-    cout << "8----É¾³ıÏßĞÔ±íÖ¸¶¨Î»ÖÃÔªËØ\n";
-    cout << "9----ÏÔÊ¾ÏßĞÔ±í\n";
-    cout << "0-----Çå³ıÆÁÄ»\n";
-
-    cout << "\tÍË³ö£¬ÊäÈëÒ»¸ö¸ºÊı£¡\n";
-
-}
-
-int main(void) {
-    SqList L;
-    InitList(L);
-
-    ShowInfo();
-
-    int in;
-    while(true) {
-        cout << "ÇëÊäÈëÒ»¸ö²Ù×÷Âë£º";
-        cin >> in;
-        if(in < 0) in = -1;
-        switch(in) {
-
-        case 1:
-            ClearList(L);
-            break;
-        case 2:
-            ListEmpty(L);
-            break;
-        case 3:
-            ListLength(L);
-            break;
-        case 4: {
-            int n = 0;
-            cout << "ÇëÊäÈë²éÑ¯ÔªËØµÄÎ»ÖÃ£º";
-            cin >> n;
-            ElemType e;
-            int $status = GetElem(L,n,e);
-            if($status == 0){
-                cout << "²éÑ¯µÄÎ»ÖÃ²»´æÔÚ£¡\n";
-            } else{
-                cout << "Ë³Ğò±íÖĞµÚ"<< n <<"¸öÔªËØÎª£º" << e <<endl;
-            }
-            break;
-        }
-        case 5:{
-            int in = 0;
-            ElemType out;
-            cout <<"ÇëÊäÈëÔªËØ£º";
-            cin >> in;
-            PriorElem(L,in,out);
-
-            break;
-        }
-        case 6:{
-            int in = 0;
-            ElemType out;
-            cout <<"ÇëÊäÈëÔªËØ£º";
-            cin >> in;
-            NextElem(L,in,out);
-            break;
-        }
-
-        case 7: {
-            int i;
-            ElemType e;
-            cout << "ÇëÊäÈëÒª²åÈëµÄÎ»ÖÃ£º";
-            cin >> i;
-            cout << "ÇëÊäÈëÒª²åÈëµÄÖµ£º";
-            cin >> e;
-            int $status = ListInsert(L,i,e);
-            if($status == 0) cout << "ÊäÈëµÄÎ»ÖÃ²»´æÔÚ£¬²åÈëÊ§°Ü£¡\n";
-            else cout << "²åÈë³É¹¦£¡\n";
-            break;
-        }
-        case 8:{
-            int in = 0;
-            cout << "ÇëÊäÈëÉ¾³ıÔªËØµÄÎ»ÖÃ£º";
-            cin >>in;
-            int $status = ListDelete(L,in);
-            if($status == 1) cout << "É¾³ı³É¹¦£¡\n";
-            else cout << "Î»ÖÃ²»´æÔÚ£¬É¾³ıÊ§°Ü£¡\n";
-            break;
-        }
-        case 9:
-            TraverseList(L);
-            break;
-        case 0:
-            system("cls");
-            ShowInfo();
-            break;
-        case -1: return 0;
-        default: cout << "ÄúÊäÈëÁË´íÎóµÄ²Ù×÷Âë£¬"; break;
-        }
-    }
-
-
-    return 0;
-}
->>>>>>> d86ab504f81293155f9b7f2081d418161b97ece6

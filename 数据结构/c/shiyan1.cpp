@@ -8,14 +8,14 @@ using namespace std;
 #define ElemType int
 typedef int Status;
 
-//½¨Á¢Ë³Ğò±í
+//å»ºç«‹é¡ºåºè¡¨
 typedef struct {
     ElemType *elem;
     int length;
 } SqList;
 #define MAXSIZE 100
 
-//³õÊ¼»¯Ë³Ğò±í
+//åˆå§‹åŒ–é¡ºåºè¡¨
 Status InitList(SqList &L) {
     L.elem = new ElemType(MAXSIZE);
     if(!L.elem) exit(OVERFLOW);
@@ -23,7 +23,7 @@ Status InitList(SqList &L) {
     return OK;
 }
 
-//Ïò±íÖĞ²åÈëÊı¾İ
+//å‘è¡¨ä¸­æ’å…¥æ•°æ®
 Status ListInsert(SqList &L,int i,ElemType e) {
     if((i<1) || (i>L.length+1)) return ERROR;
     if(L.length==MAXSIZE) return ERROR;
@@ -33,59 +33,59 @@ Status ListInsert(SqList &L,int i,ElemType e) {
     return OK;
 }
 
-//ÏÔÊ¾Êı¾İ
+//æ˜¾ç¤ºæ•°æ®
 Status TraverseList(SqList L) {
     if(L.length == 0)
-        cout << "¸ÃË³Ğò±íÎª¿Õ£¡";
+        cout << "è¯¥é¡ºåºè¡¨ä¸ºç©ºï¼";
     else
-        cout << "¸ÃË³Ğò±íÀïµÄÔªËØÎª£º";
+        cout << "è¯¥é¡ºåºè¡¨é‡Œçš„å…ƒç´ ä¸ºï¼š";
 
     for(int i=0; i<L.length; i++)
         cout << L.elem[i] << ",";
     cout << endl;
 }
-//Çå¿ÕÊı¾İ±í
+//æ¸…ç©ºæ•°æ®è¡¨
 Status ClearList(SqList &L) {
     L.length=0;
 }
-//ÅĞ¶ÏÏßĞÔ±íÊÇ·ñÎª¿Õ
+//åˆ¤æ–­çº¿æ€§è¡¨æ˜¯å¦ä¸ºç©º
 Status ListEmpty(SqList L) {
     if(L.length == 0)
-        cout << "¸ÃÏßĞÔ±íÎª¿Õ£¡"<<endl;
+        cout << "è¯¥çº¿æ€§è¡¨ä¸ºç©ºï¼"<<endl;
     else
-        cout << "¸ÃÏßĞÔ±í²»Îª¿Õ£¡"<<endl;
+        cout << "è¯¥çº¿æ€§è¡¨ä¸ä¸ºç©ºï¼"<<endl;
 }
-//ÇóÏßĞÔ±íµÃ³¤¶È
+//æ±‚çº¿æ€§è¡¨å¾—é•¿åº¦
 Status ListLength(SqList L) {
-    cout << "¸ÃÏßĞÔ±íµÃ³¤¶ÈÎª£º" << L.length <<endl;
+    cout << "è¯¥çº¿æ€§è¡¨å¾—é•¿åº¦ä¸ºï¼š" << L.length <<endl;
 }
 
-//»ñÈ¡Ö¸¶¨Î»ÖÃµÄÔªËØ
+//è·å–æŒ‡å®šä½ç½®çš„å…ƒç´ 
 Status GetElem(SqList L,int i,ElemType &e) {
     if(i<1 || i>L.length) return ERROR;
     e = L.elem[i-1];
     return OK;
 }
-//ÇóÇ°Çı
+//æ±‚å‰é©±
 //Status Pro
-//Çóºó¼Ì
+//æ±‚åç»§
 
 int main(void) {
     SqList L;
     InitList(L);
 
-    printf("1----Çå¿ÕÏßĞÔ±í\n");
-    printf("2----ÅĞ¶ÏÏßĞÔ±íÊÇ·ñÎª¿Õ\n");
-    printf("3----ÇóÏßĞÔ±í³¤¶È\n");
-    printf("4----»ñÈ¡ÏßĞÔ±íÖ¸¶¨Î»ÖÃÔªËØ\n");
-    printf("5----ÇóÇ°Çı\n");
-    printf("6----Çóºó¼Ì\n");
-    printf("7----ÔÚÏßĞÔ±íÖ¸¶¨Î»ÖÃÖĞ²åÈëÔªËØ\n");
-    printf("8----É¾³ıÏßĞÔ±íÖ¸¶¨Î»ÖÃÔªËØ\n");
-    printf("9----ÏÔÊ¾ÏßĞÔ±í\n");
+    printf("1----æ¸…ç©ºçº¿æ€§è¡¨\n");
+    printf("2----åˆ¤æ–­çº¿æ€§è¡¨æ˜¯å¦ä¸ºç©º\n");
+    printf("3----æ±‚çº¿æ€§è¡¨é•¿åº¦\n");
+    printf("4----è·å–çº¿æ€§è¡¨æŒ‡å®šä½ç½®å…ƒç´ \n");
+    printf("5----æ±‚å‰é©±\n");
+    printf("6----æ±‚åç»§\n");
+    printf("7----åœ¨çº¿æ€§è¡¨æŒ‡å®šä½ç½®ä¸­æ’å…¥å…ƒç´ \n");
+    printf("8----åˆ é™¤çº¿æ€§è¡¨æŒ‡å®šä½ç½®å…ƒç´ \n");
+    printf("9----æ˜¾ç¤ºçº¿æ€§è¡¨\n");
 
-    printf("\tÍË³ö£¬ÊäÈëÒ»¸ö¸ºÊı£»");
-    printf("ÇëÊäÈëÒ»¸ö²Ù×÷Âë£º\n");
+    printf("\té€€å‡ºï¼Œè¾“å…¥ä¸€ä¸ªè´Ÿæ•°ï¼›");
+    printf("è¯·è¾“å…¥ä¸€ä¸ªæ“ä½œç ï¼š\n");
 
 
     int in;
@@ -105,7 +105,7 @@ int main(void) {
             break;
         case 4: {
             int n = 0;
-            cout << "ÇëÊäÈë²éÑ¯ÔªËØµÄÎ»ÖÃ£º";
+            cout << "è¯·è¾“å…¥æŸ¥è¯¢å…ƒç´ çš„ä½ç½®ï¼š";
             cin >> n;
             ElemType e;
             GetElem(L,n,e);
@@ -115,9 +115,9 @@ int main(void) {
         case 7: {
             int i;
             ElemType e;
-            cout << "ÇëÊäÈëÒª²åÈëµÄÎ»ÖÃ£º";
+            cout << "è¯·è¾“å…¥è¦æ’å…¥çš„ä½ç½®ï¼š";
             cin >> i;
-            cout << "ÇëÊäÈëÒª²åÈëµÄÖµ£º";
+            cout << "è¯·è¾“å…¥è¦æ’å…¥çš„å€¼ï¼š";
             cin >> e;
             ListInsert(L,i,e);
             break;
