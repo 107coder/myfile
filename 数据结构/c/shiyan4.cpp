@@ -18,6 +18,7 @@ typedef int QElemType;
 
 void showinfo()
 {
+    cout << "1710121183-崔少峰\n";
     cout << "生成二叉树……………………\n";
     cout << "二叉树初始化成功！\n";
     cout << "1--创建二叉树！\n";
@@ -28,7 +29,7 @@ void showinfo()
     cout << "6--层序遍历二叉树！\n";
     cout << "7--求二叉树深度！\n";
     cout << "8--求二叉树叶子节点个数！\n";
-    cout << "0--清空试图！\n";
+    cout << "0--清空视图！\n";
     cout << "-1-退出该程序！\n";
 }
 
@@ -212,41 +213,21 @@ void LevelOrderTraverse(BiTree T)
     InitQueue(Q);
     BiTree p = T;
     BiTree q = new BiTNode;
-    while(p || QueueEmpty(Q))
+    if(T != NULL){
+        EnQueue(Q,T);
+    }
+
+    while(QueueEmpty(Q) == ERROR)
     {
-        cout << p->data<< " ";
-//        EnQueue(Q,p);
-        cout << "1";
-        q = p->lchild;
-        cout << "2";
-        if(q){
-//            cout << p->data << " ";
-            EnQueue(Q,q);
-        }
-        q = p->rchild;
-        cout << "3";
-        if(q)
-        {
-//            cout << p->data << " ";
-            EnQueue(Q,q);
-        }
-        cout << "4";
         DeQueue(Q,p);
-        cout << "5";
+        cout << p->data << " ";
 
-
-
-//        if(p)
-//        {
-//            EnQueue(Q,p);
-//            p=p->lchild;
-//        }
-//        else
-//        {
-//            DnQueue(Q,q);
-//            cout << q->data;
-//            p = q->rchild;
-//        }
+        if(p->lchild != NULL){
+            EnQueue(Q,p->lchild);
+        }
+        if(p->rchild != NULL){
+            EnQueue(Q,p->rchild);
+        }
     }
 }
 //---------------求二叉树的深度----------------
@@ -285,8 +266,11 @@ int main(void)
         case 1:
         {
             cout << "请输入您要插入的数据：";
+            //String str = "ABC##DE#G##F###":
+            //for(int i=0; i<str.length(); i++){
+                CreateBiTree(T);
+            //}
 
-            CreateBiTree(T);
 
         }
         break;
